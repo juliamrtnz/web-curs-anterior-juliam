@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="./style.css" /> 
+    <title>La gran festa del Futbol Femení</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+</head>
+
+<body onload="mostrarBienvenida()">
+
+    <header> <!-- Capcelera -->
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+        ☰
+        </label>
+
+        <nav> <!-- Menú -->
+            <ul class="menu">
+                <li><img class="logo-principal" src="img/logo.png" alt="Logo"></li>
+                <li><a class="enllaç" href="index.html">Inici</a></li>
+                <li><a class="enllaç" href="index.html#dates">Dates</a></li>
+                <li><a class="enllaç" href="index.html#sponsors">Sponsors</a></li>
+                <li><a class="enllaç" href="faq.html">FAQ</a></li>
+                <li><a class="enllaç" href="contacte.html">Contacte</a></li>
+                <li><a class="enllaç" href="registre.html">Registre</a></li>
+                <li><a class="enllaç" href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('img/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: center;" > <!-- Hero -->
+            <div class="hero-div"> <!-- He hagut que ficar el fons aquí ja que al publicar-lo a Award-Space, si ficava el fons al CSS no sortia -->
+                <h2>BENVINGUTS A LA</h2>
+                <h1>FESTA DEL FUTBOL FEMENÍ</h1>
+                <p>Vine a gaudir del millor talent, la passió i l'espectacle de</p>
+                <p>les nostres jugadores en una jornada inoblidable</p>
+                <div class="boto">
+                    <a href="registre.html" class="boto-registre">Registra't</a> <!-- Registre -->
+                </div>
+            </div>
+        </section>
+            
+        <section id=dates class="dates"> <!-- Text i foto dates -->
+            
+            <h2 class="titol-dates">Dates</h2>
+            
+            <div class="text-imatge-dates">
+                
+                <div class="text-dates">
+                    <p>Prepara't per viure la Gran Festa del Futbol Femení aquest 2026! Un esdeveniment únic pensat per celebrar l'esport, el talent i la passió pel futbol.</p>
+                    <p>La jornada tindrà com a plat fort un gran partit amistós d'exhibició (amb la presència d'equips destacats o promeses d'acadèmies de primer nivell), però la festa començarà molt abans. Des de primera hora, els assistents podran gaudir d'una espectacular Fan Zone amb activitats prèvies, jocs i animació per a tota la família.</p>
+                    <p>A més, serà una jornada de germanor amb la invitació de diversos clubs locals femenins. Vine a gaudir d'un ambient festiu irrepetible i dona suport al futbol femení!</p>
+                </div>
+
+                <div class="imatge-dates">
+                    <img class="calendari" src="img/calendari.png" alt="Calendari">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="itinerari">
+            
+            <h2 class="titol-taula">Itinerari de la Festa del Futbol Femení</h2>
+            <div class="contenidor-taula">
+                <table class="taula-itinerari">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Dia 1 - Inauguració i Bases</th>
+                            <th>Dia 2 - Rendiment i Tàctica</th>
+                            <th>Dia 3 - Futur i Cloenda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Recepció i acreditacions</td>
+                            <td>Esmorzar de networking tècnic</td>
+                            <td>Taula rodona: L'impacte del futbol base</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 12:00</td>
+                            <td>Conferència inaugural: Evolució del futbol femení</td>
+                            <td>Workshop: Preparació física específica per a jugadores</td>
+                            <td>Presentació de projectes esportius destacats</td>
+                        </tr>
+                        <tr>
+                            <td>12:30 - 14:00</td>
+                            <td>Taula rodona: Professionalització i drets</td>
+                            <td>Ponència: Anàlisi tàctica i sistemes de joc</td>
+                            <td>Debat interactiu: Visibilitat i patrocinis</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>Dinar i networking</td>
+                            <td>Dinar lliure</td>
+                            <td>Espai de trobada entre clubs i professionals</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 17:30</td>
+                            <td>Workshops especialitzats: Psicologia esportiva</td>
+                            <td>Casos d'èxit: Xerrades amb jugadores professionals</td>
+                            <td>Conclusions del congrés</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 - 19:00</td>
+                            <td>Presentació de nous equips i acadèmies</td>
+                            <td>Conferència magistral: Lideratge a la banqueta</td>
+                            <td>Entrega de premis i cerimònia de comiat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+
+        <section id="sponsors" class="patrocinadors">
+
+                <h2 class="titol-patrocinadors">Patrocinadors</h2>
+
+                <ul class="llista-logos">
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador1.png" alt="AG LETTER">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>AG LETTER</h3>
+                                    <a href="https://vithas.es/centro/vithas-centro-medico-lleida/" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador2.png" alt="CLUB FURBORS">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>CLUB FURBORS</h3>
+                                    <a href="https://www.fcbarcelona.es/es/" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador3.png" alt="ALEXIA">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>ALEXIA</h3>
+                                    <a href="https://es.wikipedia.org/wiki/Alexia_Putellas" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador4.png" alt="BORCELLE">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>BORCELLE</h3>
+                                    <a href="https://borcellehome.com/?srsltid=AfmBOood4lVa4ibJmuWHUisSWHLbsUNh0gLjIKQmk6xoFsGWgHaRN60c" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador5.png" alt="FILME FRAME">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>FILME FRAME</h3>
+                                    <a href="https://oriolcaru.com/" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador6.png" alt="RIMERIO APPAREL">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>RIMERIO APPAREL</h3>
+                                    <a href="https://rimberioctg.online/" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador7.png" alt="SERENE">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>SERENE</h3>
+                                    <a href="https://serencollection.es/?srsltid=AfmBOoptAlrj5Xx5y5g6WndRVWtUSVBgG0vtOhjcCZuiE4LNPyY0hcrn" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="logo">
+                        <div class="flip-card">
+                            <div class="flip-card-F">
+
+                                <div class="flip-card-1">
+                                    <img src="img/patrocinador8.png" alt="HIT THAT DRUM">
+                                </div>
+
+                                <div class="flip-card-2">
+                                    <h3>HIT THAT DRUM</h3>
+                                    <a href="https://www.musicalbareda.com/" target="_blank">
+                                        Visitar web
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <a href="contacte.html" class="boto-contacte">Contacta'ns</a>
+
+        </section>
+
+    </main>
+
+    <footer class="peudepagina">
+
+       <div class="xxss">
+            <a href="#" target="_blank">
+                <img src="img/x.png" alt="X">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/tiktok.png" alt="Tik Tok">
+            </a>
+        </div>
+
+        <div class="enllaços-legals">
+            <a href="termes-condicions.html">Termes i Condicions</a> <span class="separador">|</span> 
+            <a href="cookies.html">Política de Cookies</a> <span class="separador">|</span> 
+            <a href="politica.html">Política de Privadesa</a>
+        </div>
+
+        <div class="autores">
+            <p>Made with ❤️ by Nena & Júlia</p>
+        </div>
+
+    </footer>
+    <script src="benvinguda.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style.css" /> 
+     <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Registre - La gran festa del Futbol Femení</title>
+</head>
+
+<body>
+
+    <header> <!-- Capcelera -->
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+        ☰
+        </label>
+
+        <nav> <!-- Menú -->
+            <ul class="menu">
+                <li><img class="logo-principal" src="img/logo.png" alt="Logo"></li>
+                <li><a class="enllaç" href="index.html">Inici</a></li>
+                <li><a class="enllaç" href="index.html#dates">Dates</a></li>
+                <li><a class="enllaç" href="index.html#sponsors">Sponsors</a></li>
+                <li><a class="enllaç" href="faq.html">FAQ</a></li>
+                <li><a class="enllaç" href="contacte.html">Contacte</a></li>
+                <li><a class="enllaç" href="registre.html">Registre</a></li>
+                <li><a class="enllaç" href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-formulario">  
+
+        <h2>Registra't</h2>
+
+       <form action="#" method="POST" class="formulariContacte">
+
+            <label for="nom">Nom</label>
+            <input class="rellenoFormularioInput" type="text" id="nom" placeholder="Nom" required>
+
+          <label for="correu">Correu electrònic</label>
+
+            <div id="errorCorreu" class="bocadillo-error">
+             ⚠ El correu electrònic ha de tenir format usuari@domini.ext
+        </div>
+
+            <input class="rellenoFormularioInput"
+              type="text"
+                id="correu"
+              placeholder="Correu electrònic"
+              required>
+
+        <label for="contrasenya">Contrasenya</label>
+
+        <div id="errorContrasenya" class="bocadillo-error">
+            ⚠ Les contrasenyes no coincideixen
+    </div>
+
+        <input class="rellenoFormularioInput"
+        type="password"
+        id="contrasenya"
+        placeholder="Contrasenya"
+        required>
+
+        <label for="confirmar-contrasenya">Confirmar Contrasenya</label>
+
+        <input class="rellenoFormularioInput"
+       type="password"
+       id="confirmar-contrasenya"
+       placeholder="Confirmar Contrasenya"
+       required>
+
+    <button class="cajitaRegistro" type="submit">
+    Registrar-se
+</button>
+
+</form>
+    </main>
+
+    <footer id="peudepagina-registre" class="peudepagina">
+
+       <div class="xxss">
+            <a href="#" target="_blank">
+                <img src="img/x.png" alt="X">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/tiktok.png" alt="Tik Tok">
+            </a>
+        </div>
+
+        <div class="enllaços-legals">
+            <a href="termes-condicions.html">Termes i Condicions</a> <span class="separador">|</span> 
+            <a href="cookies.html">Política de Cookies</a> <span class="separador">|</span> 
+            <a href="politica.html">Política de Privadesa</a>
+        </div>
+
+        <div class="autores">
+            <p>Made with ❤️ by Nena & Júlia</p>
+        </div>
+
+    </footer>
+<script src="registre.js"></script>
+    
+</body>
+</html>

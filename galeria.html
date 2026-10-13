@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="./style.css" /> 
+    <title>La gran festa del Futbol Femení</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header> <!-- Capcelera -->
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+        ☰
+        </label>
+
+        <nav> <!-- Menú -->
+            <ul class="menu">
+                <li><img class="logo-principal" src="img/logo.png" alt="Logo"></li>
+                <li><a class="enllaç" href="index.html">Inici</a></li>
+                <li><a class="enllaç" href="index.html#dates">Dates</a></li>
+                <li><a class="enllaç" href="index.html#sponsors">Sponsors</a></li>
+                <li><a class="enllaç" href="faq.html">FAQ</a></li>
+                <li><a class="enllaç" href="contacte.html">Contacte</a></li>
+                <li><a class="enllaç" href="registre.html">Registre</a></li>
+                <li><a class="enllaç" href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SLIDER -->
+       <section class="slider">
+
+            <h1 class="titol-galeria">Esdeveniments anteriors</h1>
+
+            <div class="slider-fotos">
+                <ul>
+                    <li><img src="img/img1.jpg" alt="Esdeveniment 1"></li>
+                    <li><img src="img/img2.jpg" alt="Esdeveniment 2"></li>
+                    <li><img src="img/img3.jpg" alt="Esdeveniment 3"></li>
+                    <li><img src="img/img4.jpg" alt="Esdeveniment 4"></li>
+                    <li><img src="img/img5.jpg" alt="Esdeveniment 5"></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- GRAELLA -->
+        <section class="graella">
+
+            <h2 class="titol-graella">Galeria de l'esdeveniment</h2>
+
+            <div class="graella-fotos">
+
+                <img src="img/img6.jpg" alt="Galeria 1">
+                <img src="img/img7.jpg" alt="Galeria 2">
+                <img src="img/img8.jpg" alt="Galeria 3">
+                <img src="img/img9.jpg" alt="Galeria 4">
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="peudepagina">
+
+       <div class="xxss">
+            <a href="#" target="_blank">
+                <img src="img/x.png" alt="X">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="img/tiktok.png" alt="Tik Tok">
+            </a>
+        </div>
+
+        <div class="enllaços-legals">
+            <a href="termes-condicions.html">Termes i Condicions</a> <span class="separador">|</span> 
+            <a href="cookies.html">Política de Cookies</a> <span class="separador">|</span> 
+            <a href="politica.html">Política de Privadesa</a>
+        </div>
+
+        <div class="autores">
+            <p>Made with ❤️ by Nena & Júlia</p>
+        </div>
+
+    </footer>
+    
+<div id="modalGaleria" class="modal-galeria">
+    <span id="tancarModal">&times;</span>
+    <img id="imatgeGran" src="" alt="">
+</div>
+
+<script src="galeria.js"></script>
+
+
+</body>
+</html>

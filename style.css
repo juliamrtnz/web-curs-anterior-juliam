@@ -1,0 +1,989 @@
+html{
+    scroll-padding-top: 65px; /* Aquest marge fa que al anar cap a una secció de la pàgina, 
+   el contingut del principi no quedi darrere de la capçalera fixa */
+}
+
+/*Inici*/
+body { /* Perquè no quedin espais als costats de la pantalla */
+    font-family: sans-serif, Arial;
+    background-color: #f3e5f5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header ul{
+    list-style: none; /* Perquè no es veguin els punts de la llista */
+    vertical-align: middle; /* Perquè estigui al centre verticalment del header */
+    padding: 0;
+    margin: 0; /* Perquè no quedés tant espai al header, ja que quedava molt gran */
+}
+
+header li{
+    display: inline; /* Perquè vagin tots els items de la llista seguits */
+    padding-right: 20px; /* Separació entre els items de la llista */
+}
+
+.enllaç{ 
+    font-size: 16px; 
+    color: white;
+    text-decoration: none; /* Perquè no es vegi el subratllat dels enllaços */
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.enllaç:hover{
+    color: rgb(108, 0, 148); /* Perquè al passar canvii el color */
+    transform: scale(1.1);
+}
+
+.logo-principal{
+    width: 65px;
+    vertical-align: middle; /* Perquè estigui al centre verticalment del header */
+}
+
+header{
+    background: linear-gradient(to right, #cd97ff, #6c1a9c); /* Amb fons gradient perquè quedi més estètic */
+    position: sticky; /* Perquè la capçalera no es mogui quan l'usuari baixa per la web */
+    top: 0;
+    width: 100%; 
+}
+
+/*Hero*/
+.hero h2 {
+    font-family: "Anton", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.hero h1 {
+    font-family: "Anton", sans-serif;
+    color:#6c1a9c;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.hero{
+    background-image: url('img/hero.png');
+    background-repeat: no-repeat; /* Perquè la fotografia no es repeteixi en el fons */
+    background-size: cover; /* Perquè la fotografia cobreixi tot els fons */
+    background-position: center; /* Perquè el fons sigui la fotografia centrada verticalment */
+    height: 550px;
+    display: flex; /* Activa la flexbox per al conetidor del hero*/
+    justify-content: center; /* Centra el contenidor de manera horitzontal */
+    align-items: center; /* Centra el contenidor de manera vertical*/
+}
+
+.hero-div {
+    background-color: rgba(205, 151, 255, 0.35); /* Amb canvi d'opacitat*/
+    color: white;
+    text-align: center; 
+    width: 100%;
+    max-width: 430px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 25px;  
+}
+
+.hero-div p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.boto {
+    margin-top: 40px; /* Div del botó*/
+}
+
+.boto-registre {
+    text-decoration: none;
+    background: linear-gradient(to right, #6c1a9c, #992cff); 
+    font-size: 16px;
+    color: white;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boto:hover { /* Al passar el ratolí es fa una mica més gran */
+    transform: scale(1.05);
+}
+
+.boto-registre:hover { /* Al passar el ratolí es canvia el color */
+    background: linear-gradient(to right, #825d98, #c382ff); 
+}
+
+.boto:active{ /* Al clicar el botó es fa una mica més petit */
+    transform: scale(0.95)
+}
+
+/*Dates*/
+.dates { /* Secció */
+    padding: 50px; 
+}
+
+.titol-dates {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px; /* Separació entre el títol i el contingut */
+}
+
+.dates p {
+    margin-top: 6px; /* Perquè quedi alineada amb l'imatge del calendari */
+}
+
+.text-imatge-dates {
+    display: flex; /* Activa la flexbox */
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenidor horitzontalment */
+    flex-wrap: wrap; /* Permet que els elements baixin a la següent línia si no hi ha espai */
+    gap: 20px; /* Afegeix una mica d'espai entre el text i la imatge */
+    align-items: center; /* Centra verticalment el text i la imatge */
+    justify-content: center; 
+}
+
+.text-dates {
+    flex: 1 1 400px; /* Fa que creixi i s'encongeixi, amb un mínim de 400px */
+    max-width: 450px; /* Perquè ocupi màxim la meitat del contenidor */
+    font-size: 16px;
+    color: #3b3b3b;
+    text-align: left; 
+    box-sizing: border-box;
+}
+
+.calendari {
+    flex: 1 1 400px;
+    max-width: 450px; /* Perquè ocupi màxim la meitat del contenidor */
+    box-sizing: border-box;
+}
+
+/*Itinerari*/
+.itinerari{
+    background: linear-gradient(to right, #efc8ff, rgb(241, 223, 255), #efc8ff);
+    padding: 60px;
+}
+
+.titol-taula{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px; /* Separació entre el títol i la taula */
+}
+
+.contenidor-taula {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra en horizontal */
+    border: 1px solid rgb(160, 107, 210); 
+    border-radius: 10px; 
+    overflow: hidden; /* Això es perquè com que vull la taula amb bordes rodons, perquè les cantonades cuadrades no sobresutin, ja que això fa que res sobresurti dels contorns. */
+}
+
+.taula-itinerari {
+    font-size: 14px;
+    justify-content: center; /* Centra en horizontal */
+    width: 100%;
+    border-collapse: collapse; /* Perquè les celdes no estiguin separades */
+}
+
+.taula-itinerari th { /* Capcelera */
+    background-color: rgb(160, 107, 210); /* Color del fons */
+    color: white; /* Color de la lletra */
+    text-align: center; /* Text alineat al centre de la cel.la */
+    border: 1px solid rgb(160, 107, 210); 
+    padding: 10px; /* Separació de la lletra amb el borde de les celes */
+}
+
+.taula-itinerari td { /* Cel.les normals */
+    text-align: center; /* Text alineat al centre de la cel.la */
+    color: #3b3b3b; /* Color de la lletra */
+    border: 1px solid rgb(160, 107, 210);
+    padding: 10px; /* Separació de la lletra amb el borde de les celes */
+}
+
+/* Patrocinadors*/
+.patrocinadors {
+    text-align: center;
+    padding: 50px;
+}
+
+.titol-patrocinadors {
+   font-size: 32px;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 30px; 
+}
+
+.llista-logos {
+    list-style: none;
+    justify-content: center; /* Centra el bloc dels logos*/
+    padding: 0;       
+    margin: 0 auto 20px auto;
+    max-width: 1080px;
+    display: flex; 
+    flex-wrap: wrap; /* Això fa que si ocupen tot el màxim d'ample baixin cap a baix la resta*/
+    gap: 20px;
+}
+
+.logo {
+    flex: 1 1 200px; 
+    max-width: 240px;
+    width: 100%;
+    background-color: #ffffff; 
+    border: 1px solid #ffb8ff; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    perspective: 1000px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 1024px) { /* Es per poder ficar que hi hagin 4 columnes exactament */
+    .llista-logos {
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); /* Força que hi hagin 4 columnes*/
+    }
+
+    .logo {
+        max-width: 240px; 
+        justify-self: center; /* Centtra */
+    }
+}
+
+.flip-card { /*Mides de les targetes*/
+    width: 100%;
+    height: 200px;
+}
+
+.flip-card-F { /* Funcionament de girar*/
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s; /* Controla el gir */
+    transform-style: preserve-3d; /* Efecte 3D per a que gira de manera tridimensional*/
+}
+
+.logo:hover .flip-card-F { /* Quan es passa el ratolí per sobre del logo, gira 180 graus en el eix de les y*/
+    transform: rotateY(180deg);
+}
+
+.flip-card-1,
+.flip-card-2 {
+    position: absolute; /* Es coloquen una sobre l'altra */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Amaga la cara de darrere */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flip-card-1 { /* Cara de devant*/
+    background-color: white;
+}
+
+.flip-card-2 { /* Cara de darrere*/
+    background: linear-gradient(to right, #6c1a9c, #cd97ff);
+    color: white;
+    transform: rotateY(180deg); /*Per a que no estigui girada*/
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Perquè el padding no sumi tamany al total de la targeta */
+}
+
+.flip-card-2 h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.flip-card-2 a { /* Botó de l'enllaç a la web*/
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s; /* Transició suau per quan passes el ratolí pel botó */
+}
+
+
+.flip-card-2 a:hover { /*Al passar el ratolí per damunt*/
+    background-color: #c382ff;
+    transform: scale(1.05);
+}
+
+.boto-contacte {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to right, #6c1a9c, #992cff);  
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 17px;
+    cursor: pointer;
+}
+
+.boto-contacte:hover {
+    background: linear-gradient(to right, #825d98, #c382ff); /* Al passar el ratolí canvia de color */
+    transform: scale(1.05); /* Al passar el ratolí agumenta el tamany */
+}
+
+.boto-contacte:active{
+    transform: scale(0.95); /* Al clicar disminueix el tamany */
+}
+
+/*Peu de pàgina*/
+.peudepagina {
+    background: linear-gradient(to right, #6c1a9c, #cd97ff);
+    text-align: center;
+    padding: 40px;
+}
+
+#peudepagina-contacte{ /* En la pàgina de contacte, al ser molt petita, el footer no es quedava fixat abaix, per això l'hem fixat*/
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#peudepagina-registre{ /* En la pàgina de contacte, al ser molt petita, el footer no es quedava fixat abaix, per això l'hem fixat*/
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.xxss a {
+    text-decoration: none;
+}
+
+.xxss img {
+    max-width: 30px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    filter: grayscale(100%) brightness(0); /* Perquè siguin de color negre totes */
+}
+
+.xxss a:hover {
+    opacity: 0.7; /* Al passar el ratolí baixa la opacitat*/
+}
+
+.enllaços-legals {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.enllaços-legals a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.enllaços-legals a:hover {
+    color: rgb(108, 0, 148);
+}
+
+.separador {
+    color: #ffffff;
+    margin: 0px 6px;
+}
+
+.autores p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*Contacte*/
+.seccio-contacte {
+    max-width: 1000px; 
+    padding: 40px 20px 250px 20px; /*Padding forçat perquè quedi bé el responsive*/
+    margin: 0 auto; /*Perquè estigui centrat*/
+}
+
+.titol-contacte {
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.div-contacte {
+    display: flex;
+    flex-wrap: wrap; /* Per al responsive */
+    justify-content: center;
+    align-items: flex-start; /*Perquè cada element acabi depen a ell mateix, no al altre element*/
+}
+
+.contingut-contacte {
+    flex: 1; 
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.contingut-contacte h3 {
+    color: rgb(164, 74, 248);
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.contingut-contacte p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3b3b3b;
+    margin-bottom: 25px;
+}
+
+.mapa-div {
+    margin-bottom: 25px; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.xxss-contacte a {
+    text-decoration: none; 
+}
+
+.xxss-contacte img {
+    width: 30px;
+    margin-right: 15px;
+    filter: grayscale(100%) brightness(0);
+}
+
+.xxss-contacte a:hover img {
+    opacity: 0.5; 
+}
+
+.formulari-contacte {
+    flex: 1; 
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    background-color: rgb(236, 215, 255);  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 40px;
+    box-sizing: border-box; 
+    margin-bottom: 40px;
+}
+
+.formulari-contacte input,
+.formulari-contacte textarea {
+    width: 100%; 
+    font-family: sans-serif, Arial;
+    font-size: 12px;
+    border: 1px solid #775e7a;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+}
+
+.formulari-contacte input:focus,
+.formulari-contacte textarea:focus {
+    border: 2px solid rgb(255, 0, 191);
+    outline: none;
+}
+
+label{
+    display: none; /*Per a que no aparegui el label perquè no quedava bé*/
+}
+
+.boto-enviar {
+    width: 100%; 
+    background-color: rgb(164, 74, 248); 
+    color: white; 
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 15px; 
+    cursor: pointer;
+}
+
+.boto-enviar:hover {
+    background-color: #552b75;
+    transform: scale(1.03); 
+}
+
+.boto-enviar:active {
+    transform: scale(0.95);
+}
+
+/*Registre*/
+.rellenoFormularioInput { /*Inputs*/
+    width: 100%;
+    border: 1px solid #775e7a;
+    box-sizing: border-box;  /* Perquè les cel.les d'input acabin al borde de la caixa */
+    border-radius: 10px;
+    padding: 10px 12px ;
+}
+
+.cajitaRegistro { /*Boto registrar-se*/
+    background-color:rgb(164, 74, 248);
+    color:white;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    box-sizing: border-box; /* Perquè les cel.les d'input acabin al borde de la caixa */
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.cajitaRegistro:hover {
+    background-color: #552b75;
+    transform: scale(1.05)
+}
+
+.cajitaRegistro:active{
+   transform: scale(0.95)
+}
+
+.formulariContacte {
+    width: 100%;           
+    max-width: 300px;      
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    margin-bottom: 110px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(236, 215, 255);  
+    align-items: center;
+    justify-content: space-evenly; /* Reparteix verticalment per igual tot */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.formulariContacte input:focus,
+.formulariContacte textarea:focus {
+	border: 2px rgb(255, 0, 191) solid; /* Al clicar al formulari surt el borde de color */
+    outline: none;
+}
+
+.main-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 150px 20px;
+}
+
+.main-formulario h2{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/*FAQ*/
+.faq-main {
+    padding: 30px;
+    max-width: 1400px; /* Amplada màxima que pot ocupar el bloc a la pantalla */
+    margin: 0 auto; /* Es centra horitzontalment*/
+    text-align: center;
+}
+
+.titol-faq { 
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    margin-bottom: 30px; /*Separació abaix*/
+}
+
+.faq-quadrat {
+    width: 100%;
+    max-width: 300px; /* Amplada màxima fixa per a cada targeta */
+    height: 220px; /* Alt màxim fix per a cada targeta */
+    display: inline-block; /*Perque es coloquin una devorar l'altre*/
+    margin: 10px;
+    vertical-align: top;
+}
+
+.faq-F {
+    justify-content: center;    
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d; /*Prespectiva tridimensional*/
+}
+
+.faq-quadrat:hover .faq-F {
+    transform: rotateY(180deg); /* Gir sobre l'eix de les y*/
+}
+
+.faq-1,
+.faq-2 {
+    position: absolute; /* Perquè es coloquin una sobre l'altra*/
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    backface-visibility: hidden; /* Amaga la cara de darrere */
+    border: 2px solid rgb(164, 74, 248);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-1 {
+    background-color: rgb(236, 215, 255);
+}
+
+
+.faq-2 {
+    background-color: #c382ff;
+    transform: rotateY(180deg);
+}
+
+.faq-1 h3,
+.faq-2 h3 {
+    color: #6c1a9c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.faq-2 p {
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Politica, cookies i termes-condicions*/
+.main-politica, 
+.main-cookies, 
+.main-termes{
+    text-align: justify;
+    padding: 60px;
+}
+
+/* Galeria */
+.titol-galeria,
+.titol-graella {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px; /* Espai sota*/
+}
+
+.slider {
+    padding: 30px; /* Espai dins de la secció*/
+}
+
+.slider-fotos {
+    width: 85%; /*Omple el 85% de la pantalla*/
+    max-width: 900px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;/* Amaga les fotos que queden fora de la finestra visible */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slider-fotos ul {
+    display: flex; /* Per posar totes les fotos una al costat de l'altra */
+    padding: 0;
+    margin: 0;
+    width: 500%; /* Perquè son exactament 5 imatges*/
+    animation: animat 20s infinite alternate; /* Aplica l'animació de 30s, infinita i d'anada i tornada */
+    will-change: margin-left; /*Li avisa que es moura, perquè l'animació sigui més suau*/
+}
+
+.slider-fotos li {
+    width: 100%;
+    list-style: none; /* Treu els punts de la llista */
+}
+
+.slider-fotos img {
+    width: 100%;
+    height: 500px; /* Perquè la imatge tingui la meteixa mesura que el slider */
+    object-fit: cover; /* Perquè no es deformin les imatges */
+}
+
+/* Animació: Mou el marge esquerre a partir de percentatges per mostrar cada foto*/
+@keyframes animat {
+    0% { 
+         margin-left: 0; 
+    }
+    15% {
+         margin-left: 0; 
+        }
+
+    25% {
+         margin-left: -100%; 
+        }
+    40% { 
+         margin-left: -100%; 
+    }
+
+    50% { 
+         margin-left: -200%; 
+    }
+    65% {
+         margin-left: -200%; 
+        }
+
+    75% { 
+         margin-left: -300%; 
+        }
+    90% { 
+         margin-left: -300%; 
+        }
+
+    100% { 
+         margin-left: -400%; 
+        }
+}
+
+/* Graella */
+.graella {
+    padding: 50px;
+}
+
+.graella-fotos {
+    display: grid; /* Per estructurar les files i les columnes */
+    grid-template-columns: 1fr 1fr; /* Per colocar 2 columnes iguals*/
+    gap: 25px; /* Separació entre imatges */
+    max-width: 900px;
+    margin: auto;
+}
+
+.graella-fotos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s; /* Perquè l'animació sigui suau*/
+}
+
+.graella-fotos img:hover { /* Efecte en passar el ratolí*/
+    transform: scale(1.03); /*Es fa gran*/
+}
+
+/*Hamburguer*/
+header{
+    background: linear-gradient(to right, #cd97ff, #6c1a9c);
+    position: sticky; /* Fa que la barra es quedi fixada a dalt quan fas scroll per la pàgina */
+    top: 0;  /* Es fixi exactament a dalt de tot */
+    width: 100%;
+    height: 65px;
+    z-index: 1000; /* Assegura que el header quedi sempre per sobre de qualsevol altre element */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* El logo a l'esquerra i el menú a la dreta */
+    padding: 0 20px;
+}
+
+.menu{
+    list-style: none; /* Treu els punts de les llistes*/
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    margin-right: 20px; /* Separació de 20px a la dreta de cada enllaç del menú */
+}
+
+.enllaç{
+    color: white;
+    text-decoration: none; /* Elimina el típic subratllat dels enllaços de text */
+    font-size: 16px;
+    transition: 0.3s; /*Suau*/
+}
+
+.enllaç:hover{  /* Al passar el ratolí */
+    color: rgb(108, 0, 148);
+}
+
+.logo-principal{
+    width: 55px;
+}
+
+#menu-toggle{
+    display: none;  /* S'amaga */
+}
+
+.hamburger{ /* Icona tres ralles */
+    display: none; /*A l'ordinador s'amaga*/
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Això només s'aplica per als mòvils*/
+@media screen and (max-width: 768px){
+
+    header{
+        justify-content: flex-start; /* Ara els elements s'alineen a l'esquerra en lloc de separar-se */
+    }
+
+    .menu{
+        display: none; /* Amaga el menú d'ordinador */
+    }
+
+    .hamburger{
+        display: block;  /*Visible la icona d'hamburguesa */
+    }
+
+    .logo-principal{
+        margin-left: 20px; /* Afegeix separació a l'esquerra del logo respecte a la icona d'hamburguesa */
+    }
+
+     /* Quan la icona de menu està marcada */
+    #menu-toggle:checked + .hamburger + nav .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background-color: #4d1b63;
+        padding: 30px 0;
+    }
+
+    .menu li{
+        margin: 20px 0; /* 20px d'espai a dalt i a sota */
+    }
+
+}
+
+/*Validació Registre (Email)*/
+.bocadillo-error{
+    display: none;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #ffe4e4;
+    color: #c00000;
+
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 14px;
+
+    position: relative;
+}
+
+.bocadillo-error::after{
+    content: "";
+
+    position: absolute;
+
+    bottom: -10px;
+    left: 20px;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ff6b6b;
+}
+
+/*Validació Contrasenyas*/
+.bocadillo-error{
+    display: none;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #ffe4e4;
+    color: #c00000;
+
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 14px;
+
+    position: relative;
+}
+
+/* Punta del bocadillo */
+.bocadillo-error::after{
+    content: "";
+
+    position: absolute;
+
+    bottom: -10px;
+    left: 20px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ff6b6b;
+}
+
+/*Ampliació Fotos Galeria*/
+.modal-galeria{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.8);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+#imatgeGran{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+#tancarModal{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
