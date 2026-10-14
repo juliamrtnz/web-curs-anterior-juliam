@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "juls-434c6"
-  }
+    "default": "juls-434c6",
+    "curs-anterior": "web-anterior"
+  },
+  "targets": {},
+  "etags": {}
 }

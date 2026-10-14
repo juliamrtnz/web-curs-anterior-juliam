@@ -1,12 +1,30 @@
-#WEB DEL CURS ANTERIOR
+# Web del curs anterior
 
-Aquesta web ha estat desenvolupada durant el curs anterior i està formada per diverses pàgines HTML connectades entre si.
+## Descripció
 
-TECNOLOGIES UTILITZADES:
+Aquesta és la pàgina web realitzada durant el curs anterior. Està desenvolupada amb HTML, CSS i JavaScript i inclou diferents pàgines connectades entre elles.
+
+## Tecnologies utilitzades
+
 - HTML
 - CSS
 - JavaScript
 - Firebase Hosting
 
-WEB PUBLICADA
-URL: https://juls-434c6.web.app
+## Execució local
+
+Obrir el fitxer `index.html` en un navegador.
+
+## Publicació
+
+La web ha estat publicada utilitzant Firebase Hosting.
+
+## Enllaços
+
+### Repositori GitHub
+
+https://github.com/juliamrtnz/web-curs-anterior-juliam
+
+### Web publicada
+
+https://web-anterior.web.app
