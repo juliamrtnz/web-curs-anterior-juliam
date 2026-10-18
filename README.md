@@ -2,7 +2,7 @@
 
 ## Descripció
 
-Aquesta és la pàgina web realitzada durant el curs anterior. Està desenvolupada amb HTML, CSS i JavaScript i inclou diferents pàgines connectades entre elles.
+Aquesta és la pàgina web realitzada durant el curs anterior. Està desenvolupada amb HTML, CSS i JavaScript i inclou diferents pàgines connectades entre elles. Es tracta d'una web informativa sobre un evnet de futbol femení.
 
 ## Tecnologies utilitzades
 
@@ -13,7 +13,7 @@ Aquesta és la pàgina web realitzada durant el curs anterior. Està desenvolupa
 
 ## Execució local
 
-Obrir el fitxer `index.html` en un navegador.
+hhtp-server
 
 ## Publicació
 
